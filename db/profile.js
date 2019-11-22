@@ -20,11 +20,11 @@ const ProfileSchema = new mongoose.Schema({
         type: String
     },
 
-    interests: {
+    intrests: {
         type: String,
     },
 
-    careerInterests: {
+    careerIntrests: {
         type: String
     }
 });

@@ -1,9 +1,16 @@
 const mongoose = require('./connection');
 const Schema = mongoose.Schema;
-const bcrypt = require('bcyrptjs');
+const bcrypt = require('bcyrpt');
 mongoose.promise = Promise
 
 const UserSchema = new Schema({
+
+    email: {
+
+        type: String,
+        unique: false,
+        required: false
+    },
 
     username: {
         type: String,
