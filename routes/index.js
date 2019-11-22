@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = require('express').Router();
+
 const apiRoutes = require('./api');
 
 router.get('/start', (req, res) => {
@@ -36,7 +37,7 @@ router.get('/logout', (req, res) => {
 })
 
 router.post('/create_user', (req, res) => {
-    
+
 })
 
 router.use('/api', apiRoutes);
