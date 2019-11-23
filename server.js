@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 const PORT = process.env.PORT || 3000;
+const dbconnection = require('./models')
 
 
 const passport = require('./config/passport/passport');
@@ -34,7 +35,7 @@ app.use(function(req, res) {
     res.sendFile(path.join(__dirname, './client/build/index.html'))
 })
 
-app.listen(PORT, function (){
+app.listen(PORT, () => {
     console.log(`API Server now listening on Port ${PORT}`)
 });
 
