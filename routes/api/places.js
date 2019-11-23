@@ -9,6 +9,6 @@ router
     .route('/:id')
     .get(placesController.findById)
     .put(placesController.update)
-    .delete(jobController.remove);
+    .delete(placesController.remove);
 
 module.exports = router;
