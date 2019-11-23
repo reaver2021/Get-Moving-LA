@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const cors = require('cors')
 const path = require('path');
 const PORT = process.env.PORT || 3000;
 const dbconnection = require('./models')
@@ -26,6 +27,8 @@ app.use(passport.session());
 
 const routes = require('./routes');
 app.use(routes);
+
+app.use(cors());
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
