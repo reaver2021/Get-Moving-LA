@@ -20,7 +20,7 @@ export default {
         return axions.delete("/api/places" + id);
     },
 
-    saveJobs: function(jobData){
+    saveJobs: function(placeData){
         return axios.post("/api/places", placeData);
     }
 };
