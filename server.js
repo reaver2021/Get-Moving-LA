@@ -35,6 +35,12 @@ app.use(function(req, res) {
     res.sendFile(path.join(__dirname, './client/build/index.html'))
 })
 
+
+const localURI = 'mongodb://localhose:27017/GetMoving'
+
+mongoose.connect(process.env.MONGODB_URI || localURI, {useNewUrlParser: true})
+
+
 app.listen(PORT, () => {
     console.log(`API Server now listening on Port ${PORT}`)
 });
