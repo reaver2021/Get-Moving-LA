@@ -1,9 +1,8 @@
 const mongoose = require('./connection');
-const Schema = mongoose.Schema;
 const bcrypt = require('bcryptjs');
 mongoose.promise = Promise
 
-const UserSchema = new Schema({
+const UserSchema = new mongoose.Schema({
 
     email: {
 
