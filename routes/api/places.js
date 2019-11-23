@@ -6,7 +6,7 @@ router.route('/')
     .post(placesController.create);
 
 router
-    route('/:id')
+    .route('/:id')
     .get(placesController.findById)
     .put(placesController.update)
     .delete(jobController.remove);
