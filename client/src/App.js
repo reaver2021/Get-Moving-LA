@@ -1,5 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+import{ BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import Nav from './components/Nav';
+import Contact from './pages/Contact';
+import About from './pages/About'
+import Profile from './pages/Profile';
 import './App.css';
 
 function App() {
