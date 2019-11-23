@@ -1,11 +1,11 @@
 const mongoose = require('./connection');
 const bcrypt = require('bcryptjs');
 mongoose.promise = Promise
+const Schema = mongoose.Schema;
 
-const UserSchema = new mongoose.Schema({
+const UserSchema = new Schema({
 
     email: {
-
         type: String,
         unique: false,
         required: false
