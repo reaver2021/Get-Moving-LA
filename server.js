@@ -15,10 +15,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 
-mongoose.connect(
-    process.env.DB_CONNECTION,
-    { useNewUrlParser: true }
-);
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/GetMoving');
 
 app.listen(PORT, function (){
     console.log(`API Server now listening on PORT ${PORT}!`);
