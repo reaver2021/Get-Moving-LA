@@ -1,0 +1,37 @@
+{
+  "name": "get-moving-la",
+  "version": "1.0.0",
+  "description": "An App for those looking to move to LA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reaver2021/Get-Moving-LA.git"
+  },
+  "author": "Get-Moving-LA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reaver2021/Get-Moving-LA/issues"
+  },
+  "homepage": "https://github.com/reaver2021/Get-Moving-LA#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^3.1.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.7.12",
+    "path": "^0.12.7"
+  }
+}
