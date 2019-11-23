@@ -2,7 +2,7 @@ const mongoose = require('./connection');
 const bcrypt = require('bcryptjs');
 
 
-const UserSchema = new this.schema({
+const UserSchema = new Schema({
 
     email: {
         type: String,
