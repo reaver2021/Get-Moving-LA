@@ -2,7 +2,7 @@ const router = require('express').Router();
 const jobController = require('../../controllers/jobsController');
 
 router.route('/')
-    .get(jobsController.findAll)
+    .get(jobController.findAll)
     .post(jobController.create);
 
 router
