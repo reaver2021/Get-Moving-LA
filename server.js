@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cheerio = require("cheerio"); // Makes HTTP request for HTML page
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
