@@ -6,15 +6,19 @@ import Nav from './components/navBar';
 import Profile from './pages/ProfileRocio';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <Nav></Nav>
-      <Profile></Profile>
-            </div>
-  );
-}
+const App = () => (
+  <Router>
+    <div>
+      <Switch>
+        <Route exact path='/' component={Search} />
+        <Route exact path='/results' component={Results}/>
+        <Route exact path='/profile' component={Profile}/>
+        <Route exact path='/login' component={Login}/>
+        <Route exact path ='/signup' component={SignUp}/>
+        <Route component={NoMatch}/>
+      </Switch>
+    </div>
+  </Router>
+);
 
 export default App;
