@@ -1,41 +1,42 @@
 import React from 'react';
 import {
-    StyleSheet,
+    styleSheet,
     Text,
     View,
     ImageBackground
-} from 'react-native';
+} from 'react';
 
 // import profileContainer from './app/components/Profile';
 
-import profileContainer from './app/components/DowntownLosAngeles.jpg';
+import profileContainer from '../images/losangelesview.jpg';
 
-export default class App extends React.Component{
+class Profile extends React.Component{
     render(){
         return (
-            <ImageBackground
-            source={require('./app/imgages/DowntownLosAngeles.jpg')}
-            style={styles.container}>
+            // <ImageBackground
+            // source={require('../images/losangelesview.jpg')}
+            // style={styles.container}>
 
-                <View style= {styles.overlayContainer}>
+            //     <View style= {styles.overlayContainer}>
                 
-                <View style= {Style.top}>
-                    <Text style={styles.header}>P R O F I L E</Text>
-               </View>
+            //     <View style= {styles.top}>
+            //         <Text style={styles.header}>P R O F I L E</Text>
+            //    </View>
 
-               <View style= {styles.profileContainer}>
-                   <profileContainer />  //Sign In//
-                   <profileContainer />   //Create Account//
-                </View>
+            //    <View style= {styles.profileContainer}>
+            //        {/* <profileContainer />  //Sign In// */}
+            //        {/* <profileContainer />   //Create Account// */}
+            //     </View>
 
-                </View>
+            //     </View>
 
-            </ImageBackground>
+            // </ImageBackground>
+            <p>test</p>
             );
         }
     }
 
-    const styles = StyleSheet.create({
+    const styles = {
         container: {
             flex : 1,
             width: '100%',
@@ -68,6 +69,7 @@ export default class App extends React.Component{
 
 
         }
-    });
+    };
 
 
+export default Profile;
