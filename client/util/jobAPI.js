@@ -19,7 +19,7 @@ export default {
     },
 
     deleteJobs: function(id){
-        return axions.delete("/api/jobs" + id);
+        return axios.delete("/api/jobs" + id);
     },
 
     saveJobs: function(jobData){
