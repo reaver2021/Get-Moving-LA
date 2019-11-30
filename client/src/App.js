@@ -11,7 +11,7 @@ import './App.css';
 //import home from './components/home';
 import NoMatch from './pages/NoMatch/NoMatch'
 import {Navbar, Nav} from 'react-bootstrap';
-import { FaKiwiBird } from "react-icons/fa";
+
 
 
 const App = () => (
@@ -21,7 +21,6 @@ const App = () => (
         <Navbar.Brand href="#home">
             <img
             alt=""
-            src={FaKiwiBird}
             width="30"
             height="30"
             />{' '}
