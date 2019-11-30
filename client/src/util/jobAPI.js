@@ -5,7 +5,7 @@ const job_key = process.env.REACT_APP_JOBS_API_KEY;
 export default {
 
     getNewJobs: function() {
-        return axios.get(`https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=0d0bdb06&app_key=d4cf89b389b26fee208010b3067b1c6a&results_per_page=10&what=nurse&where=los%20angeles`)
+        return axios.get(`https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${job_id}&app_key=${job_key}&results_per_page=10&what=nurse&where=los%20angeles`)
     },
 
     getSavedJobs: function() {

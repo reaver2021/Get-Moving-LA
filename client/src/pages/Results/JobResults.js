@@ -18,7 +18,7 @@ class JobResults extends Component {
         if (results && results.length > 0) {
             
             this.setState({
-                jobs: results.filter((value, index) => index < 5),
+                jobs: results.filter((index) => index < 5),
                 target: '_blank'
             });
         } else {
