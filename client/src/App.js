@@ -5,7 +5,7 @@ import Nav from './components/navBar';
 // import About from './pages/About';
 import Profile from './pages/ProfileRocio';
 import './App.css';
-import InLine from "./components/InLine"
+import InLine from "./components/home"
 
 class App extends Component {
     render(){ 
