@@ -6,6 +6,8 @@ import Search from './pages/Search/Search'
 // import About from './pages/About';
 import Profile from './pages/ProfileRocio';
 import JobResults from './pages/Results/JobResults';
+import Place from './pages/Places/Place'
+import PlaceResults from './pages/Results/PlaceResults';
 import './App.css';
 //import InLine from "./components/InLine";
 //import home from './components/home';
@@ -31,7 +33,7 @@ const App = () => (
             <Nav.Link href="/">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-1">Find Things to Do!</Nav.Link>
+            <Nav.Link href="/placesearch">Find Things to Do!</Nav.Link>
           </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="link-2">Profile</Nav.Link>
@@ -50,6 +52,8 @@ const App = () => (
         <Route exact path='/' component={Search} />
         <Route exact path='/results' component={JobResults}/>
         <Route exact path='/profile' component={Profile}/>
+        <Route exact path ='/placesearch' component={Place}/>
+        <Route exact path ='/placeresult' component={PlaceResults}/>
         <Route component={NoMatch} />
       </Switch>
     </div>

@@ -1,15 +1,13 @@
 import axios from 'axios';
-const place_id = process.env.PLACES_API_ID;
-const place_key = process.env.PLACES_API_KEY;
 
 export default {
 
     getNewJobs: function() {
         return axios.get(`https://api.foursquare.com/v2/venues/search?
         near=Los Angeles, CA&
-        client_id=${place_id}&
-        client_secret=${place_key}&
-        query=""`);
+        client_id=RBRMSTQJ1S4JPA4CEAVIHIXDN4LXK4YBS4E5ATZ2FKLV1AXL&
+        client_secret=UQUNWNKZNNNINHHKKBCVWZOVLJW2BJXBTNMJ0THRBQXVEJWY&
+        query="Sushi"`);
     },
 
     getSavedJobs: function() {
