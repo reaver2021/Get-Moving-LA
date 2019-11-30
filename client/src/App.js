@@ -1,6 +1,7 @@
 import React from 'react';
 import{ BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import Nav from './components/navBar';
+//import Nav from './components/navBar';
+import Search from './pages/Search/Search'
 // import Contact from './pages/Contact';
 // import About from './pages/About'
 import Profile from './pages/ProfileRocio';
@@ -14,9 +15,6 @@ const App = () => (
         <Route exact path='/' component={Search} />
         <Route exact path='/results' component={JobResults}/>
         <Route exact path='/profile' component={Profile}/>
-        <Route exact path='/login' component={Login}/>
-        <Route exact path ='/signup' component={SignUp}/>
-        <Route component={NoMatch}/>
       </Switch>
     </div>
   </Router>

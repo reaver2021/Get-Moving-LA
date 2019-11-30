@@ -9,7 +9,7 @@ export default {
         app_id=${job_id}&
         app_key=${job_key}&
         results_per_page=20&
-        what=""&
+        what="WebDeveloper"&
         where=losangeles1&
         content-type=application/json`);
     },

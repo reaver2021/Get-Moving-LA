@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-//import { Container } from '../../components/Grid';
+import { Container } from '../../components/Grid';
 import { List, ListItem } from '../../components/List'
-import API from '../../../util/jobAPI';
+import API from '../../util/jobAPI';
 import Jumbotron from '../../components/Jumbotron'
+import JobBtn from '../../components/JobBtn'
 
 class JobResults extends Component {
     state = {
