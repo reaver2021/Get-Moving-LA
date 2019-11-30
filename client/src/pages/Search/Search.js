@@ -3,8 +3,6 @@ import { Link, Redirect } from 'react-router-dom';
 import JobAPI from '../../util/jobAPI';
 import { Container } from '../../components/Grid';
 import { Input, FormBtn } from "../../components/Form";
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
@@ -57,35 +55,6 @@ class Search extends Component {
         }
         return (
             <div>
-                <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">
-                        <img
-                            alt=""
-                            width="30"
-                            height="30"
-                            className= "fas fa-kiwi-bird"
-                        />{' '}
-                        Get Moving LA!
-                    </Navbar.Brand>
-                    <Nav fill variant="tabs" defaultActiveKey="/home">
-                        <Nav.Item>
-                            <Nav.Link href="/">Home</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-1">Find Things to Do!</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-2">Profile</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-3">Login</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-4">Sign-Up</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </Navbar>
-                
             
                 <Carousel>
                     <Carousel.Item>
