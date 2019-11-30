@@ -32,14 +32,16 @@ class Search extends Component {
 
             JobAPI.getNewJobs(title)
                 .then(res => {
-                    console.log(res.data.items);
+                    console.log(res.items);
 
                     this.setState({
                         toResults: true,
                         results: res.data.items
                     });
+                    
                 })
                 .catch(err => console.log(err));
+                
         }
     };
 
@@ -50,9 +52,9 @@ class Search extends Component {
             return <Redirect to= {{
                 pathname: '/results',
                 data: { results: this.state.results}
+                
             }} />
         }
-
         return (
             <div>
                 <Navbar bg="dark" variant="dark">
@@ -144,7 +146,7 @@ class Search extends Component {
                 <Container>
                         <div className="row">
                             <div className="col-lg-4 ml-auto">
-                            <p class="lead">Moving to Los Angeles? In search of a new job, new apartment, and tons of new fun? Looking to the hustle and lifestyle of Los Angeles with an experience in one click? Get Moving Los Angeles provides the most current job postings from all industries across Greater Los Angeles to match your skills and ambitions. Connecting people and job opportunities to align with who you are, while matching apartment listings in surrounding cities and locating fun happenings all at once.
+                            <p className="lead">Moving to Los Angeles? In search of a new job, new apartment, and tons of new fun? Looking to the hustle and lifestyle of Los Angeles with an experience in one click? Get Moving Los Angeles provides the most current job postings from all industries across Greater Los Angeles to match your skills and ambitions. Connecting people and job opportunities to align with who you are, while matching apartment listings in surrounding cities and locating fun happenings all at once.
                                 Get Moving Los Angeles allows you to create a profile and bookmark new job opportunities to help you stay organized and make the search process easier, less overwhelming. You can post a resume or apply to jobs by directly submitting your LinkedIn profile.
                                 New Job and new apartment too? Search for apartment rental listings in surrounding Los Angeles Cities and add them to your Favorites! </p>
                             </div>

@@ -9,14 +9,17 @@ import JobResults from './pages/Results/JobResults';
 import './App.css';
 //import InLine from "./components/InLine";
 //import home from './components/home';
+import NoMatch from './pages/NoMatch/NoMatch'
 
 const App = () => (
+
   <Router>
     <div>
       <Switch>
         <Route exact path='/' component={Search} />
         <Route exact path='/results' component={JobResults}/>
         <Route exact path='/profile' component={Profile}/>
+        <Route component={NoMatch} />
       </Switch>
     </div>
   </Router>
