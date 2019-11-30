@@ -6,12 +6,12 @@ const heading = {
 }
 
 function Inline() {
-        return (
-          <div>
-            <h1 style={heading}>Get Moving Los Angeles</h1>
-          </div>
-        )
-      }
+  return (
+    <div>
+      <h1 style={heading}>Get Moving Los Angeles</h1>
+    </div>
+  )
+}
 
-        export default Inline;
+export default Inline;
             

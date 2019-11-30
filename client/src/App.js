@@ -18,6 +18,8 @@ class App extends Component {
       </header>
       <Nav></Nav>
       <Profile></Profile>
+      </InLine>
+      </div>
       </div>
             </div>
   );
