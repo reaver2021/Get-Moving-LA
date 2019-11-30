@@ -3,7 +3,6 @@ import {
     styleSheet,
     Text,
     View,
-    ImageBackground
 } from 'react';
 
 // import profileContainer from './app/components/Profile';
@@ -13,8 +12,6 @@ import profileContainer from '../images/losangelesview.jpg';
 class Profile extends React.Component{
     render(){
         return (
-            // <ImageBackground
-            // source={require('../images/losangelesview.jpg')}
             // style={styles.container}>
 
             //     <View style= {styles.overlayContainer}>
@@ -30,8 +27,7 @@ class Profile extends React.Component{
 
             //     </View>
 
-            // </ImageBackground>
-            <p>test</p>
+            <p></p>
             );
         }
     }
@@ -53,7 +49,7 @@ class Profile extends React.Component{
         },
         header: {
             color: '#fff', 
-            fontsize: 28,
+            fontsize: 30,
             borderColor: '#fff',
             borderWidth: 2, 
             padding: 20,  //includes padding top and bottom//
