@@ -6,17 +6,19 @@ import Nav from './components/navBar';
 import Profile from './pages/ProfileRocio';
 import JobResults from './pages/Results/JobResults';
 import './App.css';
-import InLine from "./components/home"
+import InLine from "./components/InLine";
+import home from './components/home';
 
 class App extends Component {
     render(){ 
   return (
       <div className="App">
-          <InLine />
+          <InLine>
       <header className="App-header">
       </header>
       <Nav></Nav>
       <Profile></Profile>
+      </div>
             </div>
   );
 }
