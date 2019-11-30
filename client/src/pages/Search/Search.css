@@ -1,0 +1,14 @@
+
+.d-block {
+    max-width: auto;
+    max-height: 600px;
+    padding: 50px 40px 40px;
+}
+
+.row  {
+    background: rgb(214,249,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(214,249,255,1) 0%, rgba(158,232,250,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', endColorstr='#9ee8fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-//import { Container } from '../../components/Grid';
+import { Container } from '../../components/Grid';
 import { List, ListItem } from '../../components/List'
-import API from '../../../util/jobAPI';
+import API from '../../util/jobAPI';
 import Jumbotron from '../../components/Jumbotron'
+import JobBtn from '../../components/JobBtn'
 
 class JobResults extends Component {
     state = {
@@ -13,17 +14,18 @@ class JobResults extends Component {
     };
 
     componentDidMount() {
-        const data = this.props.location.data
-        if (data && data.results.length > 0) {
+        const results = this.props.location.results
+        if (results && results.length > 0) {
             
             this.setState({
-                jobs: data.results.filter((value, index) => index < 5),
+                jobs: results.filter((value, index) => index < 5),
                 target: '_blank'
             });
         } else {
             this.setState({
                 noResults: true
             })
+
         }
     }
 
@@ -74,20 +76,14 @@ class JobResults extends Component {
                             {this.state.jobs.map((job, index) =>
                                 <ListItem key={job.id}>
                                     <div className='date-div'>
-                                        <a
-                                            key={'' + index + job.id}
-                                            href={job.results.redirect_url}
-                                            target={this.state.target}
-                                        >
-                                        </a>
+
                                             <p>{job.results.title}</p>
-                                        <p>{job.results.description}</p>
+                                            <p>{job.results.description}</p>
                                     </div>
-                                    <dib className='job-btn-div'>
+                                    <div className='job-btn-div'>
                                         <JobBtn
                                             key={'' + job.id + index}
                                             btntype='info'
-                                            disabled={job.results.redirect_url === '/'}
                                             onClick={() => this.saveJob({
                                                 title: job.results.title,
                                                 location: job.results.location.area[3],
@@ -97,7 +93,7 @@ class JobResults extends Component {
                                         >
                                             Save
                                         </JobBtn>
-                                    </dib>
+                                    </div>
                                 </ListItem>
                             )}
                         </List>
